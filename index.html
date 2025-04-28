@@ -1,0 +1,51 @@
+
+<!Doctype html>
+<html>
+<link rel="stylesheet" href="styles.css">
+    <head>
+        <title>Dashboard</title>
+        <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico" />
+    </head>
+    <body>
+        <center>
+        <style>
+.popup {
+  position: relative;
+  color:white;
+  background-color:black;
+  display: inline-block;
+  cursor:pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popup .show {
+  visibility: visible;
+  display:none;}
+</style>
+</head>
+
+<div class="popup" onclick="myFunction()">Click here to search for youtube videos!<br>
+  <iframe 
+  src="https://www.google.com/webhp?igu=1" 
+  style = "width:97vw;height:45vw;" 
+  id = "myPopup" 
+  class = "popuptext"></iframe>
+</div><br><br>
+<script>
+document.getElementById("myPopup").style.display = "none";
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.style.display = "block";
+}
+</script>
+        <button class="about" onclick="cloak()">about:blank (Shift)</button>
+        <input style = "text-align:center" placeholder="Put your Youtube Link Here:" id="ytinput"><br><br>
+        <iframe style = "width:97vw;height:41vw;" id="ytiframe" src=""></iframe>
+        <script src="script.js"></script>
+        <script src="jquery.min.js"></script>
+        <script>$(document).on('keypress',function(e) {if(e.which == 13) {ytembed();}});</script>
+        </center>
+    </body>
+</html>
