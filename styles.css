@@ -1,0 +1,100 @@
+/* General body styling for a dark theme */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Center the content vertically and horizontally */
+center {
+    width: 100%;
+}
+
+/* Styling for the popup element */
+.popup {
+    position: relative;
+    color: white;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popup:hover {
+    background-color: #333;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.popup:active {
+    background-color: #444;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Button styling */
+button.about {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s all ease;
+}
+
+button.about:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+button.about:active {
+    background-color: #666;
+    transform: translateY(0);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for the text input */
+input#ytinput {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input#ytinput:hover {
+    cursor: pointer;    
+}
+
+input#ytinput:focus {
+    cursor: text;
+    border-color: #888;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+/* Styling for the iframe */
+iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Small adjustments for responsiveness */
+@media (max-width: 768px) {
+    iframe {
+        height: 50vw;
+    }
+}
